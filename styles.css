@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1a1a2e;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.preview-container h1 {
+    font-size: 2.5em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.preview-container h1 span {
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+    margin-right: 5px;
+}
+
+.preview-container h1 span.rest {
+    color: #ff69b4;
+}
+
+.dollar-sign-large {
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+    margin-left: 5px;
+    margin-top: 0.5em;
+}
+
+.heartbeat {
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.button-group a {
+    text-decoration: none;
+    background-color: #ff69b4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+}
+
+.button-group a:hover {
+    background-color: #ff85c2;
+}
+
+.section {
+    background-color: #ff69b4;
+    border: 2px solid #ff1493;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.section h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.section p, .section ul {
+    font-size: 0.9em;
+    word-wrap: break-word;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin: 10px 0;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-size: 0.8em;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    border: 5px solid #ff69b4;
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.streaming-visual {
+    background-color: #1a1a2e;
+    border: 3px solid #ff69b4;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    /* Устанавливаем ширину по ширине родительского контейнера */
+}
+
+.screen {
+    background-color: #000000;
+    border: 3px solid #ff1493;
+    border-radius: 5px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #ff69b4;
+    cursor: pointer;
+}
+
+.donations {
+    position: absolute;
+    font-size: 0.8em;
+    color: #ff69b4;
+    animation: fall 5s infinite;
+    font-weight: bold;
+}
+
+.censored-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #ff0000;
+    text-transform: uppercase;
+    background-color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.donations:nth-child(2) {
+    top: 10px;
+    left: 10px;
+    animation-delay: 0s;
+}
+
+.donations:nth-child(3) {
+    top: 30px;
+    left: 40px;
+    animation-delay: 1s;
+}
+
+.donations:nth-child(4) {
+    top: 50px;
+    left: 70px;
+    animation-delay: 2s;
+}
+
+.donations:nth-child(5) {
+    top: 70px;
+    left: 100px;
+    animation-delay: 3s;
+}
+
+.donations:nth-child(6) {
+    top: 90px;
+    left: 130px;
+    animation-delay: 4s;
+}
+
+.donations:nth-child(7) {
+    top: 110px;
+    left: 160px;
+    animation-delay: 5s;
+}
+
+@keyframes fall {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.footer {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 3px solid #ff1493;
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.5);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
